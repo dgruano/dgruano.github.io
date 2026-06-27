@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/css/list-groups.css" rel="stylesheet">
+  <style>
+    .blog-header {
+      line-height: 1;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .blog-header-logo {
+      font-family: "Raleway", Georgia, "Times New Roman", serif;
+      font-size: 2.25rem;
+      font-weight: 800;
+    }
+    .blog-footer {
+      padding: 2.5rem 0;
+      color: #727272;
+      text-align: center;
+      background-color: #f9f9f9;
+      border-top: .05rem solid #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-center align-items-center">
+      <div class="col-10 text-center">
+        <p class="blog-header-logo text-dark">{{ page.title }}</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="list-group">
+    {% for link in page.links %}
+    <a href="{{ link.url }}" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+      <img src="{{ link.icon_url }}" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+      <div class="d-flex gap-2 w-100 justify-content-between">
+        <div>
+          <h6 class="mb-0">{{ link.label }}</h6>
+          <p class="mb-0 opacity-75">{{ link.description }}</p>
+        </div>
+        {% if link.year %}<small class="opacity-50 text-nowrap">{{ link.year }}</small>{% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <footer class="blog-footer">
+    <p>Built with 🧬 for <a href="{{ page.conference_url }}">{{ page.conference }}</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

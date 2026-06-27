@@ -1,0 +1,31 @@
+name: Sync profile README to homepage
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch README and write index.md
+        run: |
+          {
+            printf -- '---\nlayout: default\ntitle: Home\n---\n'
+            curl -sf https://raw.githubusercontent.com/dgruano/dgruano/main/README.md
+          } > index.md
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.md
+          git diff --cached --quiet || git commit -m "sync: update homepage from profile README"
+          git push

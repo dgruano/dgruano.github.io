@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .cv {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.0;
+      color: #222222;
+    }
+
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-header-text h1 {
+      font-size: 15pt;
+      font-weight: bold;
+      color: #a21f3e;
+      margin: 0 0 0.2em;
+      border: none;
+    }
+
+    .cv-header-text .cv-subtitle {
+      font-size: 9pt;
+      font-weight: 400;
+      color: #222222;
+      margin: 0 0 0.3em;
+    }
+
+    .cv-header-text .cv-contact {
+      font-size: 9pt;
+      color: #666666;
+      margin: 0;
+    }
+
+    .cv-photo {
+      width: 99px;
+      height: 104px;
+      object-fit: cover;
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-left: 1.5rem;
+    }
+
+    /* Section headers: bold, colored, bottom border */
+    .cv h2 {
+      font-size: 9pt;
+      font-style: normal;
+      font-weight: bold;
+      color: #a21f3e;
+      border: none;
+      border-bottom: 1pt solid #a21f3e;
+      padding-top: 13pt;
+      padding-bottom: 1pt;
+      margin: 0 0 0.4em;
+    }
+
+    /* Job titles */
+    .cv h3 {
+      font-size: 9.5pt;
+      font-weight: bold;
+      color: #222222;
+      margin: 0.6em 0 0;
+      border: none;
+    }
+
+    .cv h4 {
+      font-size: 9pt;
+      font-weight: bold;
+      color: #222222;
+      margin: 0.4em 0 0;
+      border: none;
+    }
+
+    /* Institution names */
+    .cv h3 + p em, .cv h4 + p em {
+      color: #434343;
+    }
+
+    /* Emphasized keywords in bullets */
+    .cv strong { color: #a21f3e; }
+
+    /* Dates */
+    .cv .cv-date { color: #666666; font-weight: 400; }
+
+    .cv p { margin: 0.2em 0; }
+
+    .cv ul {
+      margin: 0.3em 0 0.5em 1.4em;
+      padding: 0;
+    }
+
+    .cv ul li { margin-bottom: 0.2em; }
+
+    .cv em { font-style: italic; color: #434343; }
+
+    .cv a { color: #a21f3e; text-decoration: none; }
+    .cv a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+    <a href="/cv" {% if page.url contains "cv" %}class="active"{% endif %}>CV</a>
+    <a href="/poster" {% if page.url contains "poster" %}{% unless page.url contains "posters" %}class="active"{% endunless %}{% endif %}>Poster</a>
+    <a href="/posters" {% if page.url contains "posters" %}class="active"{% endif %}>Posters</a>
+  </nav>
+  <main class="cv">
+    {{ content }}
+  </main>
+</body>
+</html>

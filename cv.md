@@ -13,6 +13,7 @@ title: CV
       <a href="https://github.com/dgruano">GitHub</a> ·
       <a href="https://www.linkedin.com/in/dgruano/">LinkedIn</a>
     </p>
+    <a class="cv-download" href="/assets/CV_DANIEL_GARCIA-RUANO.pdf" download>↓ Download PDF</a>
   </div>
   <img class="cv-photo" src="/assets/cv-photo.png" alt="Daniel García-Ruano">
 </div>
@@ -23,18 +24,18 @@ title: CV
 
 ## EDUCATION
 
-**PhD in Cell Biology** *– "Revealing the link between cell volume and evolution"* · 2023
+**PhD in Cell Biology** *– "Revealing the link between cell volume and evolution"* <span class="cv-date">2023</span><br>
 *University of Rennes 1 / IGDR CNRS UMR6290*
 
-**Master's Degree in Clinical Cancer Research** · 2019
+**Master's Degree in Clinical Cancer Research** <span class="cv-date">2019</span><br>
 *University of Salamanca / Instituto de Biología Funcional y Genómica*
 
-**Bachelor's Degree in Biotechnology** · 2018
+**Bachelor's Degree in Biotechnology** <span class="cv-date">2018</span><br>
 *University of Salamanca / Instituto de Biología Funcional y Genómica*
 
 ## PROFESSIONAL EXPERIENCE
 
-### Bioinformatics Scientist *(Temporary Associate Professor)* · 2024 – Present
+### Bioinformatics Scientist *(Temporary Associate Professor)* <span class="cv-date">2024 – Present</span>
 
 *University of Bordeaux, Computational Biology & Bioinformatics Team (IBGC, UMR 5095)*
 
@@ -44,14 +45,14 @@ title: CV
 - **Contributed to pydna and OpenCloning**, an open-source Python library and web app for molecular cloning design, focused on FAIR principles.
 - **Supervised one Master's student** on transcript classification benchmarking.
 
-### Postdoctoral Fellow *(Senior Genetics Scientist)* · 2023 – 2024
+### Postdoctoral Fellow *(Senior Genetics Scientist)* <span class="cv-date">2023 – 2024</span>
 
 *University of Bordeaux, SyntheCell Team*
 
 - **Applied RNA-seq and ChIP-qPCR** to dissect molecular basis of stress adaptation in fission yeast; manuscript in preparation.
 - **Developed a CRISPR/Cas9 genome-editing strategy** to generate heterothallic strains from natural isolates for QTL mapping; published in *Yeast* (2024).
 
-### PhD Candidate *(Junior Genetics Scientist)* · 2019 – 2023
+### PhD Candidate *(Junior Genetics Scientist)* <span class="cv-date">2019 – 2023</span>
 
 *University of Rennes / IGDR CNRS UMR6290*
 
@@ -62,17 +63,44 @@ title: CV
 
 ## LANGUAGES AND CORE COMPETENCES
 
-**Programming:** Python (pandas, scikit-learn, seaborn), R (featureCounts, DESeq2, ggplot2), Bash
-
-**Workflow / HPC:** Snakemake, Slurm/HPC, Git/GitHub, Conda
-
-**Omics & Analysis:** RNA-seq (STAR, HISAT2, Salmon, htseq, Trinity), variant calling (GATK, FreeBayes)
-
-**ML / AI:** Model interpretability, deep learning for sequence classification, benchmarking
-
-**Wet Lab:** Fission yeast genetics, CRISPR/Cas9, ChIP-qPCR, fluorescence microscopy, microfluidics, flow cytometry
-
-**Languages:** Spanish (native), English (C1, Cambridge-certified), French (professional proficiency)
+<div class="cv-skills">
+  <div class="cv-skill-row">
+    <span class="cv-skill-label">Programming</span>
+    <div class="cv-tags">
+      <span class="cv-tag cv-tag--bold">Python</span><span class="cv-tag">pandas</span><span class="cv-tag">scikit-learn</span><span class="cv-tag">seaborn</span><span class="cv-tag">R</span><span class="cv-tag">featureCounts</span><span class="cv-tag">DESeq2</span><span class="cv-tag">ggplot2</span><span class="cv-tag">Bash</span>
+    </div>
+  </div>
+  <div class="cv-skill-row">
+    <span class="cv-skill-label">Workflow / HPC</span>
+    <div class="cv-tags">
+      <span class="cv-tag cv-tag--bold">Snakemake</span><span class="cv-tag">Slurm</span><span class="cv-tag">Git</span><span class="cv-tag">GitHub</span><span class="cv-tag">Conda</span>
+    </div>
+  </div>
+  <div class="cv-skill-row">
+    <span class="cv-skill-label">Omics & Analysis</span>
+    <div class="cv-tags">
+      <span class="cv-tag cv-tag--bold">RNA-seq</span><span class="cv-tag">STAR</span><span class="cv-tag">HISAT2</span><span class="cv-tag">Salmon</span><span class="cv-tag">Trinity</span><span class="cv-tag">GATK</span><span class="cv-tag">FreeBayes</span>
+    </div>
+  </div>
+  <div class="cv-skill-row">
+    <span class="cv-skill-label">ML / AI</span>
+    <div class="cv-tags">
+      <span class="cv-tag">deep learning</span><span class="cv-tag">model interpretability</span><span class="cv-tag">benchmarking</span><span class="cv-tag">sequence classification</span>
+    </div>
+  </div>
+  <div class="cv-skill-row">
+    <span class="cv-skill-label">Wet Lab</span>
+    <div class="cv-tags">
+      <span class="cv-tag cv-tag--bold">fission yeast genetics</span><span class="cv-tag cv-tag--bold">CRISPR/Cas9</span><span class="cv-tag">ChIP-qPCR</span><span class="cv-tag">fluorescence microscopy</span><span class="cv-tag">microfluidics</span><span class="cv-tag">flow cytometry</span>
+    </div>
+  </div>
+  <div class="cv-skill-row">
+    <span class="cv-skill-label">Languages</span>
+    <div class="cv-tags">
+      <span class="cv-tag cv-tag--bold">Spanish (native)</span><span class="cv-tag">English (C1)</span><span class="cv-tag">French (C1)</span>
+    </div>
+  </div>
+</div>
 
 ## PUBLICATIONS
 
@@ -94,13 +122,13 @@ title: CV
 
 ## TEACHING EXPERIENCE
 
-**Temporary Associate Professor (ATER)**, Université de Bordeaux · 2024 – Present
+**Temporary Associate Professor (ATER)**, Université de Bordeaux <span class="cv-date">2024 – Present</span><br>
 Full-time position (384 h) across 5 teaching units: **cell biology, developmental biology**, experimental imaging, and scientific communication; bilingual (FR/EN).
 
-**Guest Lecturer**, University of Bordeaux · 2023
+**Guest Lecturer**, University of Bordeaux <span class="cv-date">2023</span><br>
 Invited lecture on cell division and the cell cycle.
 
-**Teaching Assistant**, University of Rennes 1 · 2022
+**Teaching Assistant**, University of Rennes 1 <span class="cv-date">2022</span><br>
 Eukaryotic Genetics, EDUC Alliance Initiative (24 h).
 
 ## SCIENCE COMMUNICATION & OUTREACH

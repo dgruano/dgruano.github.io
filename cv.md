@@ -13,7 +13,7 @@ title: CV
       <a href="https://github.com/dgruano">GitHub</a> ·
       <a href="https://www.linkedin.com/in/dgruano/">LinkedIn</a>
     </p>
-    <a class="cv-download" href="/assets/CV_DANIEL_GARCIA-RUANO.pdf" download>↓ Download PDF</a>
+    <a class="cv-download" href="/assets/CV_DANIEL_GARCIA-RUANO.pdf" download data-goatcounter-click="cv-download">↓ Download PDF</a>
   </div>
   <img class="cv-photo" src="/assets/cv-photo.png" alt="Daniel García-Ruano">
 </div>

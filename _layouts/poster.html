@@ -43,6 +43,19 @@
     </div>
   </header>
 
+  {% if page.authors %}
+  <div class="text-center py-3 px-3" style="border-bottom: 1px solid #e5e5e5;">
+    <p class="mb-1">
+      {% for author in page.authors %}
+        {% if author.presenting %}<strong>{% endif %}{{ author.name }}{% if author.presenting %}</strong>{% endif %}<sup>{{ author.affiliations | join: "," }}</sup>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    <small class="text-muted">
+      {% for aff in page.affiliations %}<sup>{{ aff.id }}</sup> {{ aff.name }}{% unless forloop.last %} &nbsp;·&nbsp; {% endunless %}{% endfor %}
+    </small>
+  </div>
+  {% endif %}
+
   <div class="list-group">
     {% for link in page.links %}
     <a href="{{ link.url }}" class="list-group-item list-group-item-action d-flex gap-3 py-3">

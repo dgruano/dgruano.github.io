@@ -6,7 +6,7 @@ title: Home
 
 **Bioinformatician & Cell Biologist** · Postdoc / ATER @ [IBGC](https://github.com/cbib), Université de Bordeaux
 
-I work at the intersection of experimental and computational biology, using code to understand how cells grow, adapt, and evolve.
+I work at the intersection of experimental and computational biology, using code to understand how cells grow, adapt, and evolve. Lately, I've grown particularly interested in gene regulation and its evolution, with a focus on long non-coding RNAs. As an entry point into this field, I'm exploring the computational challenges of distinguishing lncRNAs from mRNAs.
 
 ![Focus](https://img.shields.io/badge/Working_on-LNClassifier-29ABE2?style=flat)
 
@@ -27,19 +27,19 @@ A research project to benchmark and improve machine learning tools for classifyi
 
 
 ### [OpenCloning](https://opencloning.org) · [frontend](https://github.com/OpenCloning/OpenCloning_frontend) · [backend](https://github.com/OpenCloning/OpenCloning_backend)
-An open-source web platform for designing and documenting molecular cloning experiments. Supports a wide range of cloning strategies with a visual, history-preserving interface. Built with React + Python/FastAPI.
+An open-source web platform for designing and documenting molecular cloning experiments. Supports a wide range of cloning strategies with a visual, history-preserving interface. Built with React + Python/FastAPI. Created and led by [@manulera](https://github.com/manulera); I contribute as a collaborator to both the frontend and backend.
 
-### [pydna](https://github.com/pydna-group/pydna)
-Python library for simulating DNA assembly — Gibson assembly, homologous recombination, restriction cloning, and more. A core tool in the synthetic biology Python ecosystem (226 ⭐).
+### [pydna](https://github.com/pydna-group/pydna) · [@pydna-group](https://github.com/pydna-group)
+Python library for simulating DNA assembly — Gibson assembly, homologous recombination, restriction cloning, and more. A core tool in the synthetic biology Python ecosystem (226 ⭐). Created and led by [@BjornFJohansson](https://github.com/BjornFJohansson); I contribute as a collaborator to this project.
 
 ---
 
 ## 📄 Selected Publications
 
-- **García-Ruano D. et al.** Uncertainty-aware benchmarking reveals ambiguous transcripts in mRNA–lncRNA classification. *bioRxiv* (2026)
-- **García-Ruano D.\*, Jain A.\*, et al.** Long-term evolution of proliferating cells using the eVOLVER platform. *Open Biology* (2023)
-- **García-Ruano D. et al.** Fluorescence exclusion — a rapid, accurate and powerful method for measuring yeast cell volume. *J Cell Sci* (2022)
-- **García-Ruano D. et al.** Engineering heterothallic strains in fission yeast. *Yeast* (2024)
+- **García-Ruano D. et al.** Uncertainty-aware benchmarking reveals ambiguous transcripts in mRNA–lncRNA classification. *bioRxiv* (2026) [[DOI]](https://doi.org/10.64898/2026.04.14.718168)
+- **García-Ruano D. et al.** Engineering heterothallic strains in fission yeast. *Yeast* (2024) [[DOI]](https://doi.org/10.1002/yea.3914)
+- **García-Ruano D.\*, Jain A.\*, et al.** Long-term evolution of proliferating cells using the eVOLVER platform. *Open Biology* (2023) [[DOI]](https://doi.org/10.1098/rsob.230118)
+- **García-Ruano D. et al.** Fluorescence exclusion — a rapid, accurate and powerful method for measuring yeast cell volume. *J Cell Sci* (2022) [[DOI]](https://doi.org/10.1242/jcs.259392)
 
 \* Equal contribution · Full list on [ORCID](https://orcid.org/0000-0002-5033-8013)
 
@@ -61,6 +61,8 @@ Machine learning · RNA-seq · Genome analysis · Experimental evolution · Micr
 ## 📬 Find me
 
 [![ORCID](https://img.shields.io/badge/ORCID-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-5033-8013)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-dgruano-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/dgruano)
+[![Bluesky](https://img.shields.io/badge/Bluesky-%40soybiotec.es-0285FF?style=flat&logo=bluesky&logoColor=white)](https://bsky.app/profile/soybiotec.es)
 [![Institut IBGC](https://img.shields.io/badge/IBGC-UMR%205095-blue?style=flat)](https://www.ibgc.cnrs.fr/)
 
 > *Bioinformatician at [@cbib](https://github.com/cbib) · Bordeaux, France*

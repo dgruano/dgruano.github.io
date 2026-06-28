@@ -1,10 +1,11 @@
 ---
 layout: poster
 title: "Beyond classification accuracy: using model uncertainty to better understand lncRNA sequences"
+title_html: "<strong>Beyond classification accuracy:</strong><br>using model uncertainty to better understand lncRNA sequences"
 conference: "SMBE Meeting 2026"
 conference_url: "https://smbe2026.org"
 links:
-  - label: "Related preprint"
+  - label: "Uncertainty-aware benchmarking reveals ambiguous transcripts in mRNA–lncRNA classification"
     description: "García-Ruano et al. 2026, bioRxiv"
     url: "https://doi.org/10.64898/2026.04.14.718168"
     icon_url: "https://icons.veryicon.com/png/o/miscellaneous/decon/article-10.png"
@@ -12,10 +13,10 @@ links:
   - label: "My GitHub"
     description: "Check out the guts of the project"
     url: "https://github.com/dgruano"
-    icon_url: "https://icones.pro/wp-content/uploads/2021/06/symbole-github-violet.png"
+    icon_url: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github.png"
   - label: "Team"
     description: "Check out the website of our team"
-    url: "https://www.cbib.u-bordeaux.fr/"
+    url: "https://bordeaux-bioinformatics.fr/"
     icon_url: "https://i.pinimg.com/originals/d8/10/55/d81055d32cf810a6d527b5eb9ae20f08.png"
   - label: "Email me!"
     description: "daniel.garciaruano@ibgc.cnrs.fr"

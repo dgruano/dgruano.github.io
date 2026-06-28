@@ -197,5 +197,57 @@
   </main>
   <script data-goatcounter="https://dgruano.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
+
+  <!-- CV download modal -->
+  <div id="cv-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:999;align-items:center;justify-content:center;">
+    <div style="background:#fff;border-radius:8px;padding:2rem;max-width:360px;width:90%;box-shadow:0 8px 32px rgba(0,0,0,.2);font-family:inherit;">
+      <p style="margin:0 0 .5rem;font-size:1.05em;font-weight:600;color:#1a1a1a;">Almost there!</p>
+      <p style="margin:0 0 1.2rem;font-size:.9em;color:#555;line-height:1.5;">If you'd like me to know who you are, drop your name, email, or Bluesky handle below. Totally optional — no pressure.</p>
+      <input id="cv-modal-input" type="text" placeholder="e.g. Jane, jane@uni.edu, @jane.bsky.social"
+        style="width:100%;box-sizing:border-box;padding:.55rem .7rem;border:1px solid #ccc;border-radius:4px;font-size:.9em;margin-bottom:1rem;outline:none;">
+      <div style="display:flex;gap:.75rem;align-items:center;">
+        <button id="cv-modal-download"
+          style="flex:1;padding:.55rem;background:#a21f3e;color:#fff;border:none;border-radius:4px;font-size:.9em;font-weight:600;cursor:pointer;">
+          ↓ Download PDF
+        </button>
+        <a id="cv-modal-skip" href="#" style="font-size:.85em;color:#888;text-decoration:none;white-space:nowrap;">skip</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('cv-modal');
+    const input = document.getElementById('cv-modal-input');
+    const PDF   = '/assets/CV_DANIEL_GARCIA-RUANO.pdf';
+
+    function triggerDownload() {
+      const a = document.createElement('a');
+      a.href = PDF; a.download = ''; a.click();
+    }
+
+    function recordAndDownload() {
+      const val = input.value.trim();
+      const path = val ? '/cv-download?from=' + encodeURIComponent(val) : '/cv-download';
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({ path });
+      }
+      modal.style.display = 'none';
+      triggerDownload();
+    }
+
+    document.querySelector('[data-goatcounter-click="cv-download"]').addEventListener('click', function(e) {
+      e.preventDefault();
+      modal.style.display = 'flex';
+      input.value = '';
+      input.focus();
+    });
+
+    document.getElementById('cv-modal-download').addEventListener('click', recordAndDownload);
+    document.getElementById('cv-modal-skip').addEventListener('click', function(e) {
+      e.preventDefault(); recordAndDownload();
+    });
+    input.addEventListener('keydown', function(e) { if (e.key === 'Enter') recordAndDownload(); });
+    modal.addEventListener('click', function(e) { if (e.target === modal) { modal.style.display='none'; triggerDownload(); } });
+  </script>
 </body>
 </html>
